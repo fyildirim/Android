@@ -6,7 +6,7 @@ import android.view.*;
 import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
-
+    //dit is een test comment van soufyane
     EditText input;
     TextView output;
 
