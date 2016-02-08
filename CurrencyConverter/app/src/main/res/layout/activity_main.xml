@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.fyildirim.currencyconverter.MainActivity">
+
+    <TextView
+        android:text="Voer een bedrag in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blank"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="5000dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_below="@+id/blank"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eurobutton"
+        android:id="@+id/eurobutton"
+        android:textSize="20dp"
+        android:maxWidth="100dp"
+        android:layout_below="@+id/input"
+        android:layout_alignParentStart="true"
+        android:onClick="euroToDollar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollarbutton"
+        android:id="@+id/dollarbutton"
+        android:textSize="20dp"
+        android:maxWidth="100dp"
+        android:layout_below="@+id/input"
+        android:layout_alignEnd="@+id/input"
+        android:onClick="dollarToEuro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/output"
+        android:text="hoi"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
